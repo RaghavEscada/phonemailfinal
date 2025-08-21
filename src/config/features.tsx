@@ -5,7 +5,7 @@ export const features = [
     title: "Phone Number as Email ID",
     description: "Your phone number becomes your email address. No complex usernames or passwords to remember.",
     icon: <Smartphone className="w-6 h-6" />,
-    image: "/src/assets/identity-linked-email.jpg"
+    image: "/PhoneMail Image 1.png"
   },
   {
     title: "Aadhaar-Linked Identity",
@@ -23,6 +23,6 @@ export const features = [
     title: "Built for Everyone",
     description: "WhatsApp-like simplicity designed specifically for rural users and the non-tech-savvy.",
     icon: <Users className="w-6 h-6" />,
-    image: "/src/assets/phonemail-hero.jpg"
+    image: "/PhoneMail.png"
   }
 ];
