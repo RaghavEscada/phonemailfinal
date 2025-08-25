@@ -517,7 +517,7 @@ const PhoneMailHero = () => {
                     OUR MOBILE <span className="text-blue-400">APP</span>
               </h2>
                   <p className="text-2xl text-white/90 leading-relaxed mb-10 font-medium">
-                    Experience the future of digital communication. Simple, secure, and built for every Indian.
+                    The app is coming soon
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
