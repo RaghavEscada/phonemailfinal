@@ -599,8 +599,69 @@ const PhoneMailHero = () => {
         </div>
       </section>
 
+      {/* Footer */}
+      <footer className="bg-gray-900 border-t border-gray-800">
+        <div className="container mx-auto px-8 py-16">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            {/* Brand Section */}
+            <div className="space-y-6">
+              <div className="flex items-center justify-center space-x-4">
+                <img src="/PhoneMail logo.png" alt="PhoneMail Logo" className="w-12 h-12 object-contain" />
+                <span className="text-3xl font-black text-white tracking-wide">Phone<span className="text-blue-400">Mail</span></span>
+              </div>
+              
+              {/* Description */}
+              <div className="space-y-6">
+                <h3 className="text-xl font-bold text-white">Revolutionizing Digital Communication in India</h3>
+                <p className="text-gray-300 leading-relaxed text-lg max-w-3xl mx-auto">
+                  PhoneMail is pioneering the future of digital communication by creating India's first identity-linked email system. 
+                  We're transforming how 1.5 billion Indians receive official documents, making digital communication as simple as 
+                  your phone number. No more complex email addresses, no more lost documents - just seamless, secure, and verified 
+                  digital mail delivery directly to your phone.
+                </p>
+                <p className="text-gray-400 leading-relaxed max-w-2xl mx-auto">
+                  Built for every Indian, from rural villages to urban centers. Making the digital India dream a reality, 
+                  one phone number at a time.
+                </p>
+              </div>
 
+              {/* Social Media */}
+              <div className="flex justify-center space-x-6">
+                <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center hover:bg-blue-700 transition-all duration-300 hover:scale-110 cursor-pointer">
+                  <span className="text-white font-bold text-lg">T</span>
+                </div>
+                <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center hover:bg-blue-700 transition-all duration-300 hover:scale-110 cursor-pointer">
+                  <span className="text-white font-bold text-lg">L</span>
+                </div>
+                <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center hover:bg-blue-700 transition-all duration-300 hover:scale-110 cursor-pointer">
+                  <span className="text-white font-bold text-lg">G</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          {/* Bottom Section */}
+          <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8">
+              <p className="text-gray-400 text-sm">
+                © 2024 PhoneMail. All rights reserved.
+              </p>
+              <div className="flex space-x-6 text-sm">
+                <a href="#privacy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#terms" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                <a href="#cookies" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <span className="text-gray-400 text-sm">Made with ❤️ in India</span>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <span className="text-gray-400 text-sm">All systems operational</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     </div>
   );
