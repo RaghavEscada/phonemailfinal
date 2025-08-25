@@ -413,43 +413,6 @@ const PhoneMailHero = () => {
         </div>
       </section>
 
-      {/* Phone Mail the solution */}
-      <section className="py-20 bg-blue-600">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-white">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-semibold mb-6">Phone Mail the solution</h2>
-                <p className="text-xl max-w-3xl mx-auto">
-                  PhoneMail is an identity-linked email system that uses your phone number as your email ID.
-                </p>
-              </div>
-              
-              <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <span className="text-blue-600 font-bold text-xl bg-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">1</span>
-                    <p className="text-lg">Phone number is already Aadhaar-linked and registered with banks, retailers, and the government.</p>
-                </div>
-                
-                  <div className="flex items-start space-x-4">
-                    <span className="text-blue-600 font-bold text-xl bg-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">2</span>
-                    <p className="text-lg">This makes PhoneMail a universal receipt ID for any document — transfer letters, court orders, bills, lab reports.</p>
-                </div>
-                
-                  <div className="flex items-start space-x-4">
-                    <span className="text-blue-600 font-bold text-xl bg-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">3</span>
-                    <p className="text-lg">Built with WhatsApp-like simplicity for rural users, but operates as a fully legal, EDI-compliant email service.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
 
       {/* Practical Applications */}
       <section className="py-20 bg-black">
