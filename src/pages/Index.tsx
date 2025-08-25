@@ -101,9 +101,7 @@ const PhoneMailHero = () => {
                         <div className="space-y-6">
                             {/* Main Brand */}
               <div className="space-y-2">
-                <div className="inline-block px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-sm font-semibold mb-4 backdrop-blur-sm">
-                  🚀 Next-Gen Email Platform
-          </div>
+                
                 <h1 className="text-5xl md:text-6xl font-black leading-tight text-white mb-4 tracking-tight">
                   Phone<span className="text-blue-400">Mail</span>
                 </h1>
@@ -201,9 +199,7 @@ const PhoneMailHero = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
-              <div className="inline-block px-6 py-3 bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-full text-orange-300 text-sm font-bold mb-8 backdrop-blur-sm">
-                🇮🇳 Digital Transformation
-              </div>
+
               <h2 className="text-5xl md:text-6xl font-black text-white mb-10 leading-tight">
                 The Next Big Shift in <span className="text-blue-400">Digital India</span>
               </h2>
@@ -251,9 +247,7 @@ const PhoneMailHero = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
-              <div className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-full text-blue-300 text-sm font-bold mb-8 backdrop-blur-sm">
-                🔍 Deep Dive
-              </div>
+
               <h2 className="text-5xl md:text-6xl font-black text-white mb-8 leading-tight">
                 Inside <span className="text-blue-400">PhoneMail</span>
               </h2>
@@ -378,9 +372,7 @@ const PhoneMailHero = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <div className="inline-block px-6 py-3 bg-gradient-to-r from-green-500/20 to-teal-500/20 border border-green-500/30 rounded-full text-green-300 text-sm font-bold mb-8 backdrop-blur-sm">
-                ❓ Questions & Answers
-              </div>
+
               <h2 className="text-5xl md:text-6xl font-black text-white mb-8 leading-tight">
                 <span className="text-blue-400">FAQs</span>
               </h2>
@@ -464,9 +456,7 @@ const PhoneMailHero = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
-              <div className="inline-block px-6 py-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-full text-purple-300 text-sm font-bold mb-8 backdrop-blur-sm">
-                💼 Real World Impact
-              </div>
+
               <h2 className="text-5xl md:text-6xl font-black text-white mb-10 leading-tight">
                 Practical <span className="text-blue-400">Applications</span>
               </h2>
@@ -559,9 +549,7 @@ const PhoneMailHero = () => {
               
               <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
                 <div className="text-center lg:text-left space-y-8">
-                  <div className="inline-block px-8 py-4 bg-gradient-to-r from-white/20 to-white/10 border border-white/20 rounded-full text-white text-sm font-bold mb-8 backdrop-blur-sm">
-                    🚀 Coming Soon - Revolutionary App
-                </div>
+                  
                   <h2 className="text-5xl md:text-6xl font-black text-white mb-8 leading-tight">
                     OUR MOBILE <span className="text-blue-400">APP</span>
               </h2>
@@ -578,7 +566,7 @@ const PhoneMailHero = () => {
                       <span className="relative z-10">Learn More</span>
                       <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/5 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                 </button>
-                  </div>
+                </div>
               </div>
               
                 <div className="flex justify-center relative">
@@ -591,7 +579,7 @@ const PhoneMailHero = () => {
                     />
                     {/* Phone glow */}
                     <div className="absolute inset-0 bg-gradient-to-t from-white/10 via-transparent to-white/5 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  </div>
+              </div>
                 </div>
               </div>
             </div>
