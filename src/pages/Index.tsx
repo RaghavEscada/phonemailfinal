@@ -89,60 +89,60 @@ const PhoneMailHero = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative py-24 pt-40 overflow-hidden">
+      <section className="relative h-screen flex items-center overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-purple-900/5 to-black"></div>
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
-            <div className="space-y-8">
+                        <div className="space-y-6">
                             {/* Main Brand */}
               <div className="space-y-2">
-                <div className="inline-block px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-sm font-semibold mb-6 backdrop-blur-sm">
+                <div className="inline-block px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-sm font-semibold mb-4 backdrop-blur-sm">
                   🚀 Next-Gen Email Platform
-                </div>
-                <h1 className="text-6xl md:text-7xl font-black leading-tight text-white mb-6 tracking-tight">
+          </div>
+                <h1 className="text-5xl md:text-6xl font-black leading-tight text-white mb-4 tracking-tight">
                   Phone<span className="text-blue-400">Mail</span>
                 </h1>
-                <h2 className="text-2xl md:text-3xl text-gray-300 font-light tracking-wide">
+                <h2 className="text-xl md:text-2xl text-gray-300 font-light tracking-wide">
                   The Postbox in Your Pocket
                 </h2>
                 </div>
               
               {/* Description */}
-              <div className="space-y-6">
-                <p className="text-xl text-gray-200 leading-relaxed font-medium">
+              <div className="space-y-4">
+                <p className="text-lg text-gray-200 leading-relaxed font-medium">
                   PhoneMail is an upcoming email platform built to give 1.5B Indians simple, instant access to a digital mailbox.
                 </p>
-                <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-2xl p-6 backdrop-blur-sm">
-                  <p className="text-lg text-blue-300 font-semibold">
+                <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-2xl p-4 backdrop-blur-sm">
+                  <p className="text-base text-blue-300 font-semibold">
                     Creating the world's first verified, identity-linked email system.
                   </p>
                 </div>
               </div>
               
               {/* Stats */}
-              <div className="flex gap-8">
-                <div className="bg-gradient-to-br from-red-500/20 to-red-600/10 border border-red-500/30 rounded-2xl p-6 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
-                  <div className="text-4xl font-black bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent mb-2">66%</div>
+              <div className="flex gap-6">
+                <div className="bg-gradient-to-br from-red-500/20 to-red-600/10 border border-red-500/30 rounded-2xl p-4 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
+                  <div className="text-3xl font-black bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent mb-1">66%</div>
                   <div className="text-sm text-gray-300 font-medium">Indians (rural) don't have email</div>
                 </div>
-                <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/10 border border-blue-500/30 rounded-2xl p-6 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
-                  <div className="text-4xl font-black bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent mb-2">25+</div>
+                <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/10 border border-blue-500/30 rounded-2xl p-4 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
+                  <div className="text-3xl font-black bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent mb-1">25+</div>
                   <div className="text-sm text-gray-300 font-medium">years since IT Act 2000</div>
                 </div>
               </div>
               
               {/* CTA Section */}
-              <div className="flex flex-col sm:flex-row gap-6">
-                <button className="group relative bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-12 py-5 rounded-3xl font-bold transition-all duration-500 shadow-2xl hover:shadow-blue-500/25 hover:scale-110 transform overflow-hidden">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button className="group relative bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-10 py-4 rounded-3xl font-bold transition-all duration-500 shadow-2xl hover:shadow-blue-500/25 hover:scale-110 transform overflow-hidden">
                   <span className="relative z-10">Get Started</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                 </button>
-                <button className="group border-2 border-gray-600 hover:border-blue-400 text-gray-200 hover:text-white px-12 py-5 rounded-3xl font-bold transition-all duration-300 hover:bg-blue-500/10 hover:scale-105 transform backdrop-blur-sm relative overflow-hidden">
+                <button className="group border-2 border-gray-600 hover:border-blue-400 text-gray-200 hover:text-white px-10 py-4 rounded-3xl font-bold transition-all duration-300 hover:bg-blue-500/10 hover:scale-105 transform backdrop-blur-sm relative overflow-hidden">
                   <span className="relative z-10">Learn More</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/5 to-blue-500/0 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500"></div>
                 </button>
@@ -161,7 +161,7 @@ const PhoneMailHero = () => {
                     <img 
                       src="/PhoneMail Image 1.png" 
                       alt="PhoneMail Interface" 
-                      className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     {/* Image overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
