@@ -63,13 +63,8 @@ const PhoneMailHero = () => {
       <nav className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-3xl border-b border-gray-800/30">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-transparent to-purple-500/5"></div>
         <div className="container mx-auto px-8 py-6 flex items-center justify-between relative">
-          <div className="flex items-center space-x-5">
-            <div className="relative group">
-              <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-3 rounded-2xl shadow-2xl group-hover:shadow-blue-500/30 transition-all duration-300 group-hover:scale-110">
-                <img src="/PhoneMail logo.png" alt="PhoneMail Logo" className="w-8 h-8 object-contain" />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 -z-10"></div>
-            </div>
+          <div className="flex items-center space-x-4">
+            <img src="/PhoneMail logo.png" alt="PhoneMail Logo" className="w-10 h-10 object-contain" />
             <span className="text-2xl font-black text-white tracking-wide">Phone<span className="text-blue-400">Mail</span></span>
           </div>
           <div className="hidden md:flex items-center space-x-12">
