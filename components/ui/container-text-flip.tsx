@@ -81,7 +81,7 @@ export function ContainerTextFlip({
         <motion.div className="inline-block">
           {words[currentWordIndex].split("").map((letter, index) => (
             <motion.span
-              key={index}
+              key={index} 
               initial={{
                 opacity: 0,
                 filter: "blur(10px)",

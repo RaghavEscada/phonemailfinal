@@ -12,40 +12,40 @@ const PhoneMailHero = () => {
 
   const faqData = [
     {
-      question: "1. Proof of Concept?",
-      answer: "Identity-linked email works in closed systems today — for example, in colleges, your roll number is your email ID. PhoneMail takes the same proven idea and builds it into a single, nationwide solution."
+      question: "Proof of Concept?",
+      answer: "Identity linked email already works in closed systems today. For example, in colleges, your roll number is your email ID. PhoneMail takes the same proven idea and builds it into a single nationwide solution."
     },
     {
-      question: "2. What if I have multiple phone numbers?",
-      answer: "Think of it like postal mail — we may own multiple houses but it goes to the address you live at. PhoneMail delivers to the phone number linked to your Aadhaar, ensuring a single, verified destination for official documents."
+      question: "Doesn't everyone already have email?",
+      answer: "Most email IDs are created during phone setup, often without the user even realizing it. They exist mainly to enable Play Store access or app logins, not for what email was truly meant for: a secure, digital alternative to postal mail."
     },
     {
-      question: "3. How is PhoneMail different from DigiLocker?",
-      answer: "DigiLocker is narrow — it stores a few government-issued documents. PhoneMail is broad — it's your single inbox for every official document: transfer letters, court orders, receipts, lab reports, and more. One platform. All documents. No multiple apps."
+      question: "Why not just use WhatsApp?",
+      answer: "If WhatsApp were legal for official documents, the government would already be using it. The IT Act recognizes only email for this purpose. Moreover, WhatsApp is not built to organize or store documents. WhatsApp is for chatting. PhoneMail is purpose built for secure document delivery, management, and cloud storage."
     },
     {
-      question: "4. Why not just use WhatsApp?",
-      answer: "If WhatsApp were legal for official documents, the government would already be using it. The IT Act recognizes only email for this purpose. Moreover, WhatsApp isn't built to organize or store documents. WhatsApp is for chatting. PhoneMail is purpose-built for secure document delivery, management, and cloud storage — nothing else."
+      question: "How is PhoneMail different from DigiLocker?",
+      answer: "DigiLocker is narrow, storing only a few government issued documents. PhoneMail is broad. It is your single inbox for every official document: court orders, receipts, lab reports, and more. One platform. All documents. No multiple apps."
     },
     {
-      question: "5. Can I use it on a laptop?",
-      answer: "Yes. Log in from your laptop via our desktop app or on the web with a quick QR code scan. It works like WhatsApp in how you connect — but it's built on EDI and email standards."
+      question: "Can I use it on a laptop?",
+      answer: "Yes. Log in from your laptop via our desktop app or on the web with a quick QR code scan. It works like WhatsApp in how you connect, but it is built on EDI and email standards."
     },
     {
-      question: "6. What if I change my phone?",
-      answer: "All your documents are securely stored in the cloud. Enter your phone number on your new device, and everything is instantly restored."
+      question: "What if I change my phone?",
+      answer: "All your documents are securely stored in the cloud. Just insert your SIM into your new phone, the number is auto detected, and everything is instantly restored."
     },
     {
-      question: "7. Doesn't everyone already have email?",
-      answer: "Most email IDs exist only because they're created during phone setup. Many people don't even know they have one — it's just there to enable Play Store access or app logins, not what email was actually built for: secure, legal communication."
+      question: "What do I need to enter when signing up?",
+      answer: "At launch, you will enter basic details like your name. In the future, with government integration, PhoneMail will fetch your name, date of birth, and other details automatically using your mobile number. This makes setup automatic and instant, which will be especially useful for rural users."
     },
     {
-      question: "8. What do I need to enter when signing up?",
-      answer: "At launch, you'll enter basic details like your name. In the future, with government integration, PhoneMail will fetch your name, date of birth, and other details automatically using your mobile number — making setup automatic and instant, which will be especially useful for rural users."
+      question: "How is PhoneMail different from Gmail?",
+      answer: "Gmail is built for the corporate world, focused on professional and formal communication such as client emails or student internship applications. PhoneMail is built for the people, treating email as the digital version of postal mail, for everyday, legal, and official documents."
     },
     {
-      question: "9. How is PhoneMail different from Gmail?",
-      answer: "Gmail is built for the corporate world — professional, formal communication like client emails or student internship applications. PhoneMail is built for the people — treating email as the digital version of postal mail, for everyday, legal, and official documents."
+      question: "What if I have multiple phone numbers?",
+      answer: "Think of it like postal mail. You may own multiple houses, but mail goes to the address you live at. Similarly, once government integration is in place, PhoneMail will deliver to the phone number linked to your Aadhaar."
     }
   ];
   
@@ -58,490 +58,382 @@ const PhoneMailHero = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white relative overflow-hidden">
+    <div className="min-h-screen bg-black text-white relative overflow-hidden">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-slate-900/95 backdrop-blur-xl border-b border-slate-700">
-        <div className="container mx-auto px-6 py-5 flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center relative shadow-lg">
-              <img src="/PhoneMail logo.png" alt="PhoneMail Logo" className="w-8 h-8 object-contain" />
-              <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-400 rounded-full"></div>
+      <nav className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-3xl border-b border-gray-800/30">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-transparent to-purple-500/5"></div>
+        <div className="container mx-auto px-8 py-6 flex items-center justify-between relative">
+          <div className="flex items-center space-x-5">
+            <div className="relative group">
+              <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-3 rounded-2xl shadow-2xl group-hover:shadow-blue-500/30 transition-all duration-300 group-hover:scale-110">
+                <img src="/PhoneMail logo.png" alt="PhoneMail Logo" className="w-8 h-8 object-contain" />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 -z-10"></div>
             </div>
-            <span className="text-2xl font-bold text-white tracking-tight">PhoneMail</span>
+            <span className="text-2xl font-black text-white tracking-wide">Phone<span className="text-blue-400">Mail</span></span>
           </div>
           <div className="hidden md:flex items-center space-x-12">
-            <a href="#solution" className="text-slate-300 hover:text-white transition-colors font-medium relative group">
-              Solution
-              <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></div>
+            <a href="#solution" className="relative text-gray-300 hover:text-white transition-all duration-300 font-semibold hover:scale-110 group">
+              <span>Solution</span>
+              <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-blue-600 group-hover:w-full transition-all duration-300"></div>
             </a>
-            <a href="#market" className="text-slate-300 hover:text-white transition-colors font-medium relative group">
-              Market
-              <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></div>
+            <a href="#market" className="relative text-gray-300 hover:text-white transition-all duration-300 font-semibold hover:scale-110 group">
+              <span>Market</span>
+              <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-blue-600 group-hover:w-full transition-all duration-300"></div>
             </a>
-            <a href="#technology" className="text-slate-300 hover:text-white transition-colors font-medium relative group">
-              Technology
-              <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></div>
+            <a href="#faq" className="relative text-gray-300 hover:text-white transition-all duration-300 font-semibold hover:scale-110 group">
+              <span>Technology</span>
+              <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-blue-600 group-hover:w-full transition-all duration-300"></div>
             </a>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl transition-all duration-300 font-semibold shadow-lg">
-              Request Demo
+            <button className="group relative bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-10 py-4 rounded-3xl transition-all duration-500 font-bold shadow-2xl hover:shadow-blue-500/30 hover:scale-110 overflow-hidden">
+              <span className="relative z-10">Request Demo</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
             </button>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen py-32 pt-40 flex items-center justify-center overflow-hidden">
-        {/* Subtle Background */}
-        <div className="absolute inset-0 bg-blue-600/3"></div>
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-500/8 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-indigo-500/8 rounded-full blur-3xl"></div>
+      <section className="relative py-24 pt-40 overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-purple-900/5 to-black"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl"></div>
         
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-12 gap-12 items-center">
-            {/* Left Content - Takes 7 columns */}
-            <div className="lg:col-span-7 space-y-10">
-              {/* Main Brand */}
+        <div className="container mx-auto px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
+            {/* Left Content */}
+            <div className="space-y-8">
+                            {/* Main Brand */}
               <div className="space-y-2">
-                <div className="inline-block px-4 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-sm font-medium mb-4">
-                  ✨ Identity-Linked Email Platform
+                <div className="inline-block px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-sm font-semibold mb-6 backdrop-blur-sm">
+                  🚀 Next-Gen Email Platform
                 </div>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
-                  <span className="text-white">Phone</span>
-                  <span className="text-blue-500">Mail</span>
+                <h1 className="text-6xl md:text-7xl font-black leading-tight text-white mb-6 tracking-tight">
+                  Phone<span className="text-blue-400">Mail</span>
                 </h1>
-              </div>
-              
-              {/* Tagline */}
-              <div>
-                <h2 className="text-2xl md:text-3xl text-slate-300 font-light leading-relaxed">
-                  A Digital <span className="text-blue-400 font-medium">Mailbox</span> in Every Pocket
+                <h2 className="text-2xl md:text-3xl text-gray-300 font-light tracking-wide">
+                  The Postbox in Your Pocket
                 </h2>
-              </div>
+                </div>
               
               {/* Description */}
-              <div className="max-w-xl">
-                <p className="text-lg text-slate-400 leading-relaxed">
-                  Transform how official documents reach every Indian with our identity-linked email system. 
-                  <span className="text-slate-300 font-medium"> Your Aadhaar-linked phone number becomes your email ID.</span>
+              <div className="space-y-6">
+                <p className="text-xl text-gray-200 leading-relaxed font-medium">
+                  PhoneMail is an upcoming email platform built to give 1.5B Indians simple, instant access to a digital mailbox.
                 </p>
+                <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-2xl p-6 backdrop-blur-sm">
+                  <p className="text-lg text-blue-300 font-semibold">
+                    Creating the world's first verified, identity-linked email system.
+                  </p>
+                </div>
               </div>
               
               {/* Stats */}
-              <div className="flex gap-8 pt-2">
-                <div>
-                  <div className="text-2xl font-bold text-white">66%</div>
-                  <div className="text-sm text-slate-400">Rural Indians without email</div>
+              <div className="flex gap-8">
+                <div className="bg-gradient-to-br from-red-500/20 to-red-600/10 border border-red-500/30 rounded-2xl p-6 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
+                  <div className="text-4xl font-black bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent mb-2">66%</div>
+                  <div className="text-sm text-gray-300 font-medium">Indians (rural) don't have email</div>
                 </div>
-                <div>
-                  <div className="text-2xl font-bold text-blue-400">25+</div>
-                  <div className="text-sm text-slate-400">Years since IT Act 2000</div>
+                <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/10 border border-blue-500/30 rounded-2xl p-6 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
+                  <div className="text-4xl font-black bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent mb-2">25+</div>
+                  <div className="text-sm text-gray-300 font-medium">years since IT Act 2000</div>
                 </div>
               </div>
               
               {/* CTA Section */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all shadow-lg">
-                  Get Started
+              <div className="flex flex-col sm:flex-row gap-6">
+                <button className="group relative bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-12 py-5 rounded-3xl font-bold transition-all duration-500 shadow-2xl hover:shadow-blue-500/25 hover:scale-110 transform overflow-hidden">
+                  <span className="relative z-10">Get Started</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                 </button>
-                <button className="border border-slate-600 hover:border-blue-500 text-slate-300 hover:text-white px-8 py-3 rounded-lg font-medium transition-all hover:bg-slate-800/50">
-                  Learn More
+                <button className="group border-2 border-gray-600 hover:border-blue-400 text-gray-200 hover:text-white px-12 py-5 rounded-3xl font-bold transition-all duration-300 hover:bg-blue-500/10 hover:scale-105 transform backdrop-blur-sm relative overflow-hidden">
+                  <span className="relative z-10">Learn More</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/5 to-blue-500/0 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500"></div>
                 </button>
               </div>
             </div>
             
-            {/* Right Visual - Takes 5 columns */}
-            <div className="lg:col-span-5 relative flex justify-center items-center">
-              {/* Enhanced Visual */}
-              <div className="relative w-96 h-96 lg:w-[450px] lg:h-[450px]">
-                <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-3xl p-6 border border-slate-600 shadow-2xl">
-                  <img 
-                    src="/PhoneMail Image 1.png" 
-                    alt="PhoneMail Interface" 
-                    className="w-full h-full object-cover rounded-2xl"
-                  />
-                </div>
-                {/* Enhanced Floating Elements */}
-                <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-2 rounded-lg font-semibold shadow-xl">
-                  ✓ Secure
-                </div>
-                <div className="absolute -top-4 right-8 bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-2 rounded-lg font-semibold shadow-xl">
-                  Live
-                </div>
-                <div className="absolute top-1/2 -left-6 bg-gradient-to-r from-purple-500 to-pink-600 text-white px-3 py-1 rounded-md text-sm font-medium shadow-lg rotate-90">
-                  New
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Market Opportunity - Bento Grid */}
-      <section id="market" className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            {/* Section Header */}
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent mb-6">
-                The Critical Gap
-              </h2>
-              <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-                25 years after legal recognition, email remains irrelevant for most Indians
-              </p>
-            </div>
-
-            {/* Bento Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 h-auto lg:h-[600px]">
-              
-              {/* Large Card - Current State */}
-              <div className="lg:col-span-2 lg:row-span-2 bg-gradient-to-br from-slate-800 to-slate-700 rounded-3xl p-8 border border-slate-600 shadow-2xl">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-600 rounded-2xl flex items-center justify-center mr-4">
-                    <TrendingUp className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white">Current State</h3>
-                </div>
-                <p className="text-slate-300 mb-6 text-lg leading-relaxed">
-                  It's 2025. We have smartphones in every pocket, yet legal notices, tax orders, and transfer letters still arrive by post.
-                </p>
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <Users className="w-5 h-5 text-red-400 mr-3" />
-                    <span className="text-slate-300">66% of Indians don't use email</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Smartphone className="w-5 h-5 text-red-400 mr-3" />
-                    <span className="text-slate-300">Most accounts exist only for phone setup</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Building className="w-5 h-5 text-red-400 mr-3" />
-                    <span className="text-slate-300">Limited to office goers & students</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Medium Card - The Reason */}
-              <div className="lg:col-span-2 bg-gradient-to-br from-slate-800 to-slate-700 rounded-3xl p-6 border border-slate-600 shadow-2xl">
-                <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center mr-3">
-                    <Shield className="w-5 h-5 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold text-white">The Reason</h3>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <Mail className="w-4 h-4 text-yellow-400 mr-3 mt-1 flex-shrink-0" />
-                    <span className="text-slate-300 text-sm">No identity verification - anyone can create rajesh.1234@gmail.com</span>
-                  </div>
-                  <div className="flex items-start">
-                    <Lock className="w-4 h-4 text-yellow-400 mr-3 mt-1 flex-shrink-0" />
-                    <span className="text-slate-300 text-sm">Complex passwords, recovery steps lock out non-tech users</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Stats Card */}
-              <div className="bg-gradient-to-br from-blue-500/20 to-indigo-600/20 rounded-3xl p-6 border border-blue-500/30 shadow-2xl">
-                <div className="text-center">
-                  <BarChart3 className="w-8 h-8 text-blue-400 mx-auto mb-3" />
-                  <div className="text-3xl font-bold text-white mb-1">25+</div>
-                  <div className="text-sm text-blue-300">Years since IT Act 2000</div>
-                </div>
-              </div>
-
-              {/* Impact Card */}
-              <div className="bg-gradient-to-br from-purple-500/20 to-pink-600/20 rounded-3xl p-6 border border-purple-500/30 shadow-2xl">
-                <div className="text-center">
-                  <Target className="w-8 h-8 text-purple-400 mx-auto mb-3" />
-                  <div className="text-3xl font-bold text-white mb-1">66%</div>
-                  <div className="text-sm text-purple-300">Rural population excluded</div>
-                </div>
-              </div>
-
-              {/* Large Result Card */}
-              <div className="lg:col-span-2 bg-gradient-to-br from-emerald-500/10 to-blue-500/10 rounded-3xl p-8 border border-emerald-500/20 shadow-2xl">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-2xl flex items-center justify-center mr-4">
-                    <Zap className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white">The Result</h3>
-                </div>
-                <p className="text-slate-300 text-lg leading-relaxed">
-                  <span className="text-emerald-400 font-semibold">Paper and post remain the default.</span> There's still no universal digital channel for official communication. The gap is massive and growing.
-                </p>
-                <div className="mt-6 flex items-center">
-                  <Globe className="w-5 h-5 text-emerald-400 mr-3" />
-                  <span className="text-slate-300">Opportunity for digital transformation</span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Solution Deep Dive */}
-      <section id="solution" className="py-20 bg-gray-900">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
-                The PhoneMail Solution
-              </h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Identity-linked email system that transforms how official documents reach every Indian citizen
-              </p>
-            </div>
-
-            {/* Tab Navigation */}
-            <div className="flex justify-center mb-12">
-              <div className="bg-gray-700 rounded-xl p-1 flex">
-                <button 
-                  onClick={() => setActiveTab('overview')}
-                  className={`px-6 py-3 rounded-lg font-medium transition-all ${activeTab === 'overview' ? 'bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-blue-400 shadow-sm' : 'text-gray-300 hover:text-white'}`}
-                >
-                  Overview
-                </button>
-                <button 
-                  onClick={() => setActiveTab('technology')}
-                  className={`px-6 py-3 rounded-lg font-medium transition-all ${activeTab === 'technology' ? 'bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-blue-400 shadow-sm' : 'text-gray-300 hover:text-white'}`}
-                >
-                  Technology
-                </button>
-                <button 
-                  onClick={() => setActiveTab('business')}
-                  className={`px-6 py-3 rounded-lg font-medium transition-all ${activeTab === 'business' ? 'bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-blue-400 shadow-sm' : 'text-gray-300 hover:text-white'}`}
-                >
-                  Business Model
-                </button>
-              </div>
-            </div>
-
-            {/* Tab Content */}
-            {activeTab === 'overview' && (
-              <div className="grid lg:grid-cols-3 gap-8 mb-16">
-                <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg border border-gray-600">
-                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                    <Smartphone className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-white mb-4">Identity-Linked System</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    Phone numbers already Aadhaar-linked and registered with banks, retailers, and government. 
-                    Creates a universal receipt ID for any official document.
-                  </p>
-                </div>
-                
-                <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg border border-gray-600">
-                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                    <Users className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-white mb-4">Mass Market Accessibility</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    WhatsApp-like simplicity for rural users, eliminating complex IDs, passwords, and literacy barriers. 
-                    Built for the 900M+ Indians currently excluded from digital communication.
-                  </p>
-                </div>
-                
-                <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg border border-gray-600">
-                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                    <Shield className="w-6 h-6 text-blue-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-white mb-4">Legal Compliance</h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    Fully legal, EDI-compliant email service. Operates within existing IT Act framework 
-                    while providing secure document delivery and cloud storage.
-                  </p>
-                </div>
-              </div>
-            )}
-
-            {activeTab === 'technology' && (
-              <div className="space-y-8 mb-16">
-                <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg border border-gray-600">
-                  <h3 className="text-2xl font-semibold text-white mb-6">Technical Architecture</h3>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div>
-                      <h4 className="text-lg font-semibold text-white mb-4">Core Infrastructure</h4>
-                      <ul className="space-y-3">
-                        <li className="flex items-start space-x-3">
-                          <Lock className="w-5 h-5 text-blue-600 mt-0.5" />
-                          <span className="text-gray-300">End-to-end encryption for all documents</span>
-                        </li>
-                        <li className="flex items-start space-x-3">
-                          <Globe className="w-5 h-5 text-blue-600 mt-0.5" />
-                          <span className="text-gray-300">Cloud-based storage with instant sync</span>
-                        </li>
-                        <li className="flex items-start space-x-3">
-                          <Zap className="w-5 h-5 text-blue-600 mt-0.5" />
-                          <span className="text-gray-300">Real-time document delivery</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-white mb-4">Platform Features</h4>
-                      <ul className="space-y-3">
-                        <li className="flex items-start space-x-3">
-                          <FileText className="w-5 h-5 text-blue-600 mt-0.5" />
-                          <span className="text-gray-300">Multi-format document support</span>
-                        </li>
-                        <li className="flex items-start space-x-3">
-                          <Building className="w-5 h-5 text-blue-600 mt-0.5" />
-                          <span className="text-gray-300">Desktop and mobile applications</span>
-                        </li>
-                        <li className="flex items-start space-x-3">
-                          <Clock className="w-5 h-5 text-blue-600 mt-0.5" />
-                          <span className="text-gray-300">Automatic government integration ready</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {activeTab === 'business' && (
-              <div className="space-y-8 mb-16">
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg border border-gray-600">
-                    <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-6">
-                      <DollarSign className="w-6 h-6 text-green-600" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-white mb-4">Revenue Streams</h3>
-                    <ul className="space-y-3 text-gray-300">
-                      <li>• Government partnerships for official communications</li>
-                      <li>• Enterprise document delivery services</li>
-                      <li>• Premium storage and organization features</li>
-                      <li>• API licensing to institutions</li>
-                    </ul>
-                  </div>
+                        {/* Right Visual */}
+            <div className="relative flex justify-center items-center">
+              <div className="relative group">
+                {/* Main Container */}
+                <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black rounded-[2rem] p-8 shadow-2xl border border-gray-700/30 backdrop-blur-sm transform group-hover:scale-105 transition-all duration-700">
+                  {/* Inner glow */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                   
-                  <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg border border-gray-600">
-                    <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
-                      <Target className="w-6 h-6 text-purple-600" />
+                  <div className="relative overflow-hidden rounded-2xl">
+                    <img 
+                      src="/PhoneMail Image 1.png" 
+                      alt="PhoneMail Interface" 
+                      className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    {/* Image overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      </div>
                     </div>
-                    <h3 className="text-xl font-semibold text-white mb-4">Go-to-Market Strategy</h3>
-                    <ul className="space-y-3 text-gray-300">
-                      <li>• Partner with government departments first</li>
-                      <li>• Scale through banking and healthcare sectors</li>
-                      <li>• Rural expansion via digital literacy programs</li>
-                      <li>• Enterprise adoption for employee communications</li>
-                    </ul>
+                    
+                {/* Enhanced Floating Elements */}
+                <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-green-500 via-emerald-500 to-green-600 text-white px-6 py-3 rounded-2xl text-sm font-bold shadow-2xl backdrop-blur-sm border border-green-400/50 hover:scale-110 transition-transform duration-300 cursor-pointer">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                    <span>Secure</span>
+                      </div>
+                    </div>
+                
+                <div className="absolute -top-6 right-12 bg-gradient-to-r from-blue-500 via-blue-600 to-purple-600 text-white px-6 py-3 rounded-2xl text-sm font-bold shadow-2xl backdrop-blur-sm border border-blue-400/50 hover:scale-110 transition-transform duration-300 cursor-pointer">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-white rounded-full animate-ping"></div>
+                    <span>Live</span>
                   </div>
                 </div>
+                
+                <div className="absolute top-1/2 -left-8 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-600 text-white px-4 py-2 rounded-2xl text-xs font-bold shadow-2xl backdrop-blur-sm border border-purple-400/50 hover:scale-110 transition-transform duration-300 cursor-pointer transform -rotate-12">
+                  ⚡ Fast
+                </div>
+                
+                {/* Ambient lighting effects */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 rounded-[3rem] blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-700 -z-10"></div>
+                <div className="absolute -inset-8 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5 rounded-[4rem] blur-3xl opacity-30 group-hover:opacity-50 transition-opacity duration-1000 -z-20"></div>
               </div>
-            )}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Competitive Advantages */}
-      <section className="py-20">
+      {/* The Critical Gap */}
+      <section id="market" className="bg-gray-900 py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
-                Why PhoneMail Wins
-              </h2>
-              <p className="text-xl text-gray-300">
-                Unique positioning in the Indian digital communication landscape
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-6">
-                <div className="border-l-4 border-blue-500 pl-6">
-                  <h4 className="font-semibold text-white mb-2">vs. Traditional Email (Gmail, Yahoo)</h4>
-                  <p className="text-gray-300">
-                    Gmail is built for the corporate world. PhoneMail is built for the people — 
-                    treating email as the digital version of postal mail, accessible to all literacy levels.
-                  </p>
-                </div>
-                
-                <div className="border-l-4 border-blue-500 pl-6">
-                  <h4 className="font-semibold text-white mb-2">vs. DigiLocker</h4>
-                  <p className="text-gray-300">
-                    DigiLocker stores a few government documents. PhoneMail is your single inbox 
-                    for every official document. One platform, all documents, no multiple apps.
-                  </p>
-                </div>
+            <div className="text-center mb-20">
+              <div className="inline-block px-6 py-3 bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-full text-orange-300 text-sm font-bold mb-8 backdrop-blur-sm">
+                🇮🇳 Digital Transformation
               </div>
-              
-              <div className="space-y-6">
-                <div className="border-l-4 border-blue-500 pl-6">
-                  <h4 className="font-semibold text-white mb-2">vs. WhatsApp</h4>
-                  <p className="text-gray-300">
-                    WhatsApp isn't legal for official documents and isn't built to organize them. 
-                    PhoneMail is purpose-built for secure document delivery, management, and storage.
-                  </p>
+              <h2 className="text-5xl md:text-6xl font-black text-white mb-10 leading-tight">
+                The Next Big Shift in <span className="text-blue-400">Digital India</span>
+              </h2>
+              <div className="max-w-4xl mx-auto">
+                <p className="text-xl text-gray-200 leading-relaxed mb-8">
+                  Still using postal mail and paper documents? PhoneMail is here to disrupt the broken system.
+                </p>
+                <p className="text-lg text-blue-400 leading-relaxed mb-12">
+                  We empower every Indian with an identity-based, registered email. This means your loan papers, tax notices, 
+                  and electricity bills will now reach you directly on your phone.
+                </p>
+                
+                {/* Post Office Statistics */}
+                <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto mb-12">
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border border-gray-700/50 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+                    <div className="text-4xl font-bold bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent mb-3">149,385</div>
+                    <div className="text-gray-300 font-medium">Rural post offices</div>
+              </div>
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border border-gray-700/50 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+                    <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent mb-3">15,614</div>
+                    <div className="text-gray-300 font-medium">Urban post offices</div>
+            </div>
                 </div>
                 
-                <div className="border-l-4 border-blue-500 pl-6">
-                  <h4 className="font-semibold text-white mb-2">Proven Concept</h4>
-                  <p className="text-gray-300">
-                    Identity-linked email already works in closed systems (colleges use roll numbers as email IDs). 
-                    PhoneMail scales this proven concept nationwide.
-                  </p>
+                {/* Mail Photo */}
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-10 border border-gray-700/50 max-w-lg mx-auto shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 backdrop-blur-sm">
+                  <div className="relative overflow-hidden rounded-2xl mb-6">
+                    <img 
+                      src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop&crop=center" 
+                      alt="Traditional mail and letters" 
+                      className="w-full h-52 object-cover transition-transform duration-500 hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                  </div>
+                  <p className="text-gray-300 text-center font-medium">Traditional mail system</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Inside PhoneMail */}
+      <section id="solution" className="py-20 bg-black">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-20">
+              <div className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-full text-blue-300 text-sm font-bold mb-8 backdrop-blur-sm">
+                🔍 Deep Dive
+              </div>
+              <h2 className="text-5xl md:text-6xl font-black text-white mb-8 leading-tight">
+                Inside <span className="text-blue-400">PhoneMail</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                Simple, secure, and identity-linked email for every Indian
+              </p>
+            </div>
+
+            {/* Overview Section */}
+            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+              <div className="space-y-6">
+                <h3 className="text-2xl font-semibold text-white">Overview</h3>
+                <div className="space-y-6">
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700/50 flex items-start gap-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+                    <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-4 rounded-2xl shadow-lg flex-shrink-0">
+                      <img 
+                        src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=80&h=80&fit=crop&crop=center" 
+                        alt="Quick setup" 
+                        className="w-12 h-12 object-cover rounded-xl"
+                      />
+              </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-white mb-4">Setup in Seconds</h4>
+                      <p className="text-gray-300 leading-relaxed">PhoneMail auto detects your number and verifies with OTP instantly. No learning curve.</p>
+            </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700/50 flex items-start gap-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+                    <div className="bg-gradient-to-br from-purple-500 to-purple-600 p-4 rounded-2xl shadow-lg flex-shrink-0">
+                      <img 
+                        src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=80&h=80&fit=crop&crop=center" 
+                        alt="Identity verification" 
+                        className="w-12 h-12 object-cover rounded-xl"
+                      />
+                </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-white mb-4">Your Number is Your ID</h4>
+                      <p className="text-gray-300 leading-relaxed">One identity linked email that works everywhere, from banks to government services.</p>
+                </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700/50 flex items-start gap-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+                    <div className="bg-gradient-to-br from-green-500 to-green-600 p-4 rounded-2xl shadow-lg flex-shrink-0">
+                      <img 
+                        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=80&h=80&fit=crop&crop=center" 
+                        alt="Digital documents" 
+                        className="w-12 h-12 object-cover rounded-xl"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-white mb-4">Paper to Digital</h4>
+                      <p className="text-gray-300 leading-relaxed">No more lost papers. Store and access legal documents, loan papers, health records, and receipts securely, anytime and anywhere.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Features Section */}
+              <div className="space-y-6">
+                <h3 className="text-2xl font-semibold text-white">Features</h3>
+                <div className="space-y-6">
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700/50 flex items-start gap-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+                    <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-4 rounded-2xl shadow-lg flex-shrink-0">
+                      <img 
+                        src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=80&h=80&fit=crop&crop=center" 
+                        alt="Chat interface" 
+                        className="w-12 h-12 object-cover rounded-xl"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-white mb-4">Inbox that feels like chat</h4>
+                      <p className="text-gray-300 leading-relaxed">A clean, familiar interface that is easy to use, even for first-time users.</p>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700/50 flex items-start gap-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+                    <div className="bg-gradient-to-br from-indigo-500 to-indigo-600 p-4 rounded-2xl shadow-lg flex-shrink-0">
+                      <img 
+                        src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=80&h=80&fit=crop&crop=center" 
+                        alt="Settings interface" 
+                        className="w-12 h-12 object-cover rounded-xl"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-white mb-4">Smart settings</h4>
+                      <p className="text-gray-300 leading-relaxed">Control notifications, profile, and security in a way that feels just like the apps you already use.</p>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700/50 flex items-start gap-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+                    <div className="bg-gradient-to-br from-teal-500 to-teal-600 p-4 rounded-2xl shadow-lg flex-shrink-0">
+                      <img 
+                        src="https://images.unsplash.com/photo-1555421689-d68471e189f2?w=80&h=80&fit=crop&crop=center" 
+                        alt="QR code login" 
+                        className="w-12 h-12 object-cover rounded-xl"
+                      />
+                </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-white mb-4">Web login</h4>
+                      <p className="text-gray-300 leading-relaxed">Log in on any device with a QR code or secure OTP. No passwords, no hassle.</p>
+          </div>
+        </div>
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700/50 flex items-start gap-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+                    <div className="bg-gradient-to-br from-pink-500 to-pink-600 p-4 rounded-2xl shadow-lg flex-shrink-0">
+                      <img 
+                        src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=80&h=80&fit=crop&crop=center" 
+                        alt="Group collaboration" 
+                        className="w-12 h-12 object-cover rounded-xl"
+                      />
+            </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-white mb-4">Email groups</h4>
+                      <p className="text-gray-300 leading-relaxed">Create and manage groups just like chat. Share updates and documents instantly with teams, families, or communities.</p>
+                </div>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* FAQ Section */}
-      <section id="faq" className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20">
+      <section id="faq" className="bg-gray-900 py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent mb-6">
-                Frequently Asked Questions
+              <div className="inline-block px-6 py-3 bg-gradient-to-r from-green-500/20 to-teal-500/20 border border-green-500/30 rounded-full text-green-300 text-sm font-bold mb-8 backdrop-blur-sm">
+                ❓ Questions & Answers
+              </div>
+              <h2 className="text-5xl md:text-6xl font-black text-white mb-8 leading-tight">
+                <span className="text-blue-400">FAQs</span>
               </h2>
-              <p className="text-xl text-gray-300">
-                Everything you need to know about PhoneMail
+              <p className="text-xl text-gray-300 leading-relaxed">
+                Quick answers to common questions
               </p>
             </div>
             
-            <div className="space-y-4">
+            <div className="grid md:grid-cols-2 gap-4">
               {faqData.map((faq, index) => (
-                <div key={index} className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl shadow-2xl border border-slate-600/30 backdrop-blur-xl overflow-hidden relative">
-
+                <div key={index} className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700/50 overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 backdrop-blur-sm">
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="relative w-full p-6 text-left flex items-center justify-between hover:bg-gradient-to-r hover:from-slate-700/50 hover:to-slate-600/50 transition-all duration-300 hover:scale-[1.02]"
+                    className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-700/50 transition-all duration-300"
                   >
-                    <h4 className="text-lg font-semibold text-white pr-4">{faq.question}</h4>
+                    <h4 className="text-base font-medium text-white pr-3">{faq.question}</h4>
                     <div className="flex-shrink-0">
                       {openFAQ === index ? (
-                        <ChevronUp className="w-5 h-5 text-gray-300" />
+                        <ChevronUp className="w-4 h-4 text-gray-400" />
                       ) : (
-                        <ChevronDown className="w-5 h-5 text-gray-300" />
+                        <ChevronDown className="w-4 h-4 text-gray-400" />
                       )}
-                    </div>
+              </div>
                   </button>
                   <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    className={`overflow-hidden transition-all duration-200 ease-in-out ${
+                      openFAQ === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
                     }`}
                   >
-                    <div className="px-6 pb-6">
-                      <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
-                    </div>
-                  </div>
-                </div>
+                    <div className="px-5 pb-5">
+                      <p className="text-sm text-gray-300 leading-relaxed">{faq.answer}</p>
+              </div>
+              </div>
+              </div>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Market Timing */}
-      <section className="py-20">
+      {/* Phone Mail the solution */}
+      <section className="py-20 bg-blue-600">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-8 md:p-12 text-white">
+            <div className="text-white">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-semibold mb-6">Phone Mail the solution</h2>
-                <p className="text-xl opacity-90 max-w-3xl mx-auto">
+                <p className="text-xl max-w-3xl mx-auto">
                   PhoneMail is an identity-linked email system that uses your phone number as your email ID.
                 </p>
               </div>
@@ -549,18 +441,18 @@ const PhoneMailHero = () => {
               <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <span className="text-white font-bold text-xl bg-white/20 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">1</span>
-                    <p className="text-lg opacity-90">Phone number is already Aadhaar-linked and registered with banks, retailers, and the government.</p>
-                  </div>
-                  
+                    <span className="text-blue-600 font-bold text-xl bg-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">1</span>
+                    <p className="text-lg">Phone number is already Aadhaar-linked and registered with banks, retailers, and the government.</p>
+                </div>
+                
                   <div className="flex items-start space-x-4">
-                    <span className="text-white font-bold text-xl bg-white/20 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">2</span>
-                    <p className="text-lg opacity-90">This makes PhoneMail a universal receipt ID for any document — transfer letters, court orders, bills, lab reports.</p>
-                  </div>
-                  
+                    <span className="text-blue-600 font-bold text-xl bg-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">2</span>
+                    <p className="text-lg">This makes PhoneMail a universal receipt ID for any document — transfer letters, court orders, bills, lab reports.</p>
+                </div>
+                
                   <div className="flex items-start space-x-4">
-                    <span className="text-white font-bold text-xl bg-white/20 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">3</span>
-                    <p className="text-lg opacity-90">Built with WhatsApp-like simplicity for rural users, but operates as a fully legal, EDI-compliant email service.</p>
+                    <span className="text-blue-600 font-bold text-xl bg-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">3</span>
+                    <p className="text-lg">Built with WhatsApp-like simplicity for rural users, but operates as a fully legal, EDI-compliant email service.</p>
                   </div>
                 </div>
               </div>
@@ -570,173 +462,85 @@ const PhoneMailHero = () => {
       </section>
 
 
-      {/* Vision & Investment CTA */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-12">
-              <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">Our Vision</h2>
-              <div className="text-2xl md:text-3xl font-light text-blue-600 mb-6">
-                End Paper. Go Fully Digital.
-              </div>
-              <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
-                We're building a future where every document in India — from court orders to utility bills — 
-                moves instantly and securely online. No more papers lost, no more postal delays. 
-                Just fast, verifiable, digital transactions powering the next wave of Digital India.
-              </p>
-            </div>
-            
-            {/* Investment CTA */}
-            <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg border border-gray-600">
-              <h3 className="text-2xl font-semibold text-white mb-6">Join the Digital Revolution</h3>
-              <p className="text-lg text-gray-300 mb-8">
-                Ready to transform how 1.4 billion Indians receive official communication? 
-                Let's discuss how PhoneMail can capture this massive market opportunity.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-medium transition-all shadow-lg hover:shadow-xl">
-                  Schedule Investor Call
-                </button>
-                <button className="border-2 border-gray-400 hover:border-blue-400 text-gray-300 hover:text-blue-400 px-8 py-4 rounded-xl font-medium transition-all flex items-center justify-center">
-                  Download Executive Summary <ArrowRight className="ml-2 w-5 h-5" />
-                </button>
-              </div>
-              
-              {/* Key Metrics for Investors */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 pt-8 border-t border-gray-100">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">₹10B+</div>
-                  <div className="text-sm text-gray-300">Market Size</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">900M+</div>
-                  <div className="text-sm text-gray-300">Target Users</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">5B+</div>
-                  <div className="text-sm text-gray-300">Documents/Year</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-600">Zero</div>
-                  <div className="text-sm text-gray-300">Direct Competitors</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Use Cases */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+
+      {/* Practical Applications */}
+      <section className="py-20 bg-black">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent mb-6">
-                Real-World Applications
+            <div className="text-center mb-20">
+              <div className="inline-block px-6 py-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-full text-purple-300 text-sm font-bold mb-8 backdrop-blur-sm">
+                💼 Real World Impact
+              </div>
+              <h2 className="text-5xl md:text-6xl font-black text-white mb-10 leading-tight">
+                Practical <span className="text-blue-400">Applications</span>
               </h2>
-              <p className="text-xl text-slate-300">
-                Every document that currently arrives by post becomes instant and digital
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 shadow-2xl border border-slate-600 hover:shadow-xl transition-all hover:scale-105">
-                <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-4">
-                  <FileText className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-lg font-semibold text-white mb-3">Government Documents</h3>
-                <ul className="text-slate-300 space-y-1 text-sm">
-                  <li>• Tax assessment orders</li>
-                  <li>• Transfer letters</li>
-                  <li>• Legal notices</li>
-                  <li>• Court orders</li>
-                  <li>• Pension documents</li>
-                </ul>
-              </div>
-              
-              <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 shadow-2xl border border-slate-600 hover:shadow-xl transition-all hover:scale-105">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-4">
-                  <Building className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-lg font-semibold text-white mb-3">Financial Services</h3>
-                <ul className="text-slate-300 space-y-1 text-sm">
-                  <li>• Bank statements</li>
-                  <li>• Loan approvals</li>
-                  <li>• Insurance policies</li>
-                  <li>• Credit card bills</li>
-                  <li>• Investment reports</li>
-                </ul>
-              </div>
-              
-              <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl p-6 shadow-2xl border border-slate-600 hover:shadow-xl transition-all hover:scale-105">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
-                  <Users className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-lg font-semibold text-white mb-3">Healthcare & Utilities</h3>
-                <ul className="text-slate-300 space-y-1 text-sm">
-                  <li>• Lab reports</li>
-                  <li>• Medical prescriptions</li>
-                  <li>• Electricity bills</li>
-                  <li>• Water/gas bills</li>
-                  <li>• Property documents</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Implementation Roadmap */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
-                Implementation Roadmap
-              </h2>
-              <p className="text-xl text-gray-300">
-                Phased approach to market penetration and scaling
+              <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
+                Anything that arrives by post or requires a physical handover will be digital.
               </p>
             </div>
             
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg border border-gray-600 relative">
-                <div className="absolute -top-4 left-8 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">
-                  Phase 1
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-10 shadow-2xl border border-gray-700/50 hover:shadow-3xl transition-all duration-500 hover:scale-105 backdrop-blur-sm">
+                <div className="relative overflow-hidden rounded-2xl mb-8">
+                  <img 
+                    src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=300&h=200&fit=crop&crop=center" 
+                    alt="Government building" 
+                    className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-4 mt-4">Government Partnerships</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>• Pilot with select government departments</li>
-                  <li>• Establish compliance and security standards</li>
-                  <li>• Build initial user base</li>
-                  <li>• Prove concept at scale</li>
+                <h3 className="text-2xl font-bold text-white mb-6">Government</h3>
+                <ul className="text-gray-300 space-y-3 leading-relaxed">
+                  <li>• Tax orders</li>
+                  <li>• Legal notices</li>
+                  <li>• Pension documents</li>
+                  <li>• Ration card updates</li>
+                  <li>• Land registration records</li>
+                  <li>• Election commission notices</li>
+                  <li>• Birth and death certificates</li>
                 </ul>
               </div>
               
-              <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg border border-gray-600 relative">
-                <div className="absolute -top-4 left-8 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">
-                  Phase 2
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-10 shadow-2xl border border-gray-700/50 hover:shadow-3xl transition-all duration-500 hover:scale-105 backdrop-blur-sm">
+                <div className="relative overflow-hidden rounded-2xl mb-8">
+                  <img 
+                    src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=300&h=200&fit=crop&crop=center" 
+                    alt="Financial documents" 
+                    className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-4 mt-4">Enterprise Expansion</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>• Banking sector integration</li>
-                  <li>• Healthcare system adoption</li>
-                  <li>• Utility company partnerships</li>
-                  <li>• Enterprise customer onboarding</li>
+                <h3 className="text-2xl font-bold text-white mb-6">Financial</h3>
+                <ul className="text-gray-300 space-y-3 leading-relaxed">
+                  <li>• Bank statements</li>
+                  <li>• Insurance policies</li>
+                  <li>• Credit card bills</li>
+                  <li>• EMI schedules</li>
+                  <li>• Mutual fund statements</li>
+                  <li>• Tax-saving certificates</li>
+                  <li>• KYC and compliance</li>
                 </ul>
               </div>
               
-              <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg border border-gray-600 relative">
-                <div className="absolute -top-4 left-8 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">
-                  Phase 3
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-10 shadow-2xl border border-gray-700/50 hover:shadow-3xl transition-all duration-500 hover:scale-105 backdrop-blur-sm">
+                <div className="relative overflow-hidden rounded-2xl mb-8">
+                  <img 
+                    src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop&crop=center" 
+                    alt="Healthcare and utilities" 
+                    className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-4 mt-4">Mass Market Scale</h3>
-                <ul className="space-y-2 text-gray-300">
-                  <li>• Rural market penetration</li>
-                  <li>• Complete government integration</li>
-                  <li>• Pan-India document digitization</li>
-                  <li>• International expansion</li>
+                <h3 className="text-2xl font-bold text-white mb-6">Healthcare and Utilities</h3>
+                <ul className="text-gray-300 space-y-3 leading-relaxed">
+                  <li>• Lab reports</li>
+                  <li>• Vaccination certificates</li>
+                  <li>• Health checkup reports</li>
+                  <li>• Electricity bills</li>
+                  <li>• Water and gas bills</li>
+                  <li>• Property documents</li>
+                  <li>• Rental or lease agreements</li>
                 </ul>
               </div>
             </div>
@@ -744,37 +548,63 @@ const PhoneMailHero = () => {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-3xl p-8 md:p-12 border border-gray-600">
-              <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
-                Ready to revolutionize India's digital infrastructure?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Join us in building the universal digital communication platform for 1.4 billion Indians. 
-                The market is ready. The technology exists. The opportunity is now.
-              </p>
+            {/* Our Mobile App Coming Soon */}
+      <section className="py-24 bg-gray-900 relative overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/10 to-black"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto px-8 relative z-10">
+          <div className="max-w-7xl mx-auto">
+            <div className="relative bg-gradient-to-br from-blue-600 to-blue-800 rounded-[3rem] p-16 shadow-2xl overflow-hidden">
+              {/* Inner glow effects */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-purple-500/10 rounded-[3rem]"></div>
+              <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-white/10 to-transparent rounded-full blur-3xl"></div>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl font-medium transition-all shadow-lg hover:shadow-xl text-lg">
-                  Invest in PhoneMail
+              <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
+                <div className="text-center lg:text-left space-y-8">
+                  <div className="inline-block px-8 py-4 bg-gradient-to-r from-white/20 to-white/10 border border-white/20 rounded-full text-white text-sm font-bold mb-8 backdrop-blur-sm">
+                    🚀 Coming Soon - Revolutionary App
+                </div>
+                  <h2 className="text-5xl md:text-6xl font-black text-white mb-8 leading-tight">
+                    OUR MOBILE <span className="text-blue-400">APP</span>
+              </h2>
+                  <p className="text-2xl text-white/90 leading-relaxed mb-10 font-medium">
+                    Experience the future of digital communication. Simple, secure, and built for every Indian.
+                  </p>
+                  
+                  <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
+                    <button className="group relative bg-white text-blue-600 px-12 py-5 rounded-3xl font-bold transition-all duration-500 shadow-2xl hover:shadow-white/20 hover:scale-110 overflow-hidden">
+                      <span className="relative z-10">Notify Me</span>
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/10 to-blue-500/0 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500"></div>
                 </button>
-                <button className="border-2 border-gray-400 hover:border-blue-400 text-gray-300 hover:text-blue-400 px-10 py-4 rounded-xl font-medium transition-all flex items-center justify-center text-lg">
-                  Contact Founders <ArrowRight className="ml-2 w-5 h-5" />
+                    <button className="group border-3 border-white text-white px-12 py-5 rounded-3xl font-bold transition-all duration-300 hover:bg-white/10 hover:scale-110 backdrop-blur-sm relative overflow-hidden">
+                      <span className="relative z-10">Learn More</span>
+                      <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/5 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                 </button>
+                  </div>
               </div>
               
-              <div className="mt-8 pt-8 border-t border-gray-600">
-                <p className="text-gray-400 text-sm">
-                  Transforming postal mail to email • Making digital India truly inclusive • Building the future of official communication
-                </p>
+                <div className="flex justify-center relative">
+                  <div className="relative group">
+                    <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 rounded-[2.5rem] blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+                    <img 
+                      src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=500&fit=crop&crop=center" 
+                      alt="Mobile app preview" 
+                      className="relative w-80 h-96 object-cover rounded-[2rem] shadow-2xl border-4 border-white/30 group-hover:scale-105 transition-transform duration-500"
+                    />
+                    {/* Phone glow */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/10 via-transparent to-white/5 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
 
 
     </div>
